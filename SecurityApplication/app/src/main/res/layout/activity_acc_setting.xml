@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:orientation="vertical" >
+
+        <include layout="@layout/head" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/titlebg"
+            android:text="@string/structimgage"
+			android:visibility="gone"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/struct_image"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="2dp"
+			android:visibility="gone"
+            android:src="@drawable/structureimage2x" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingRight="10dp"
+			android:paddingLeft="10dp"
+			android:layout_marginTop="15dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:background="@color/titlebg">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingRight="5dp"
+				android:layout_gravity="center|left"
+				android:textSize="20sp"
+				android:text="@string/x_axis"
+				android:textColor="@color/black" />
+
+			<EditText android:id="@+id/edt_x_axis"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/edit_width"
+				android:textCursorDrawable="@null"
+				android:padding="3dip"
+				android:gravity="left"
+				android:text="10.00"
+				android:layout_weight="1">
+			</EditText>
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingRight="10dp"
+			android:paddingLeft="10dp"
+			android:layout_marginTop="15dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:background="@color/titlebg">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/y_axis"
+				android:layout_gravity="center|left"
+				android:paddingRight="5dp"
+				android:textSize="20sp"
+				android:textColor="@color/black" />
+
+			<EditText android:id="@+id/edt_y_axis"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/edit_width"
+				android:textCursorDrawable="@null"
+				android:padding="3dip"
+				android:gravity="left"
+				android:text="10.00"
+				android:layout_weight="1">
+			</EditText>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingRight="10dp"
+			android:paddingLeft="10dp"
+			android:layout_marginTop="15dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:background="@color/titlebg">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center|left"
+				android:text="@string/z_axis"
+				android:paddingRight="5dp"
+				android:textSize="20sp"
+				android:textColor="@color/black" />
+
+			<EditText android:id="@+id/edt_z_axis"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/edit_width"
+				android:textCursorDrawable="@null"
+				android:padding="3dip"
+				android:gravity="left"
+				android:text="10.00"
+				android:layout_weight="1">
+			</EditText>
+
+		</LinearLayout>
+
+        <LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingRight="10dp"
+			android:paddingLeft="10dp"
+			android:layout_marginTop="15dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:background="@color/titlebg">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/duration"
+				android:layout_gravity="center|left"
+				android:paddingRight="5dp"
+				android:textSize="20sp"
+				android:textColor="@color/black" />
+
+			<EditText android:id="@+id/edt_acc_duration"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/edit_width"
+				android:textCursorDrawable="@null"
+				android:padding="3dip"
+				android:gravity="left"
+				android:text="60"
+				android:layout_weight="1">
+			</EditText>
+
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingRight="10dp"
+			android:paddingLeft="10dp"
+			android:layout_marginTop="15dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:background="@color/titlebg">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center|left"
+				android:text="@string/frequency"
+				android:paddingRight="5dp"
+				android:textSize="20sp"
+				android:textColor="@color/black" />
+
+			<EditText
+				android:id="@+id/edt_acc_freq"
+				android:layout_width="match_parent"
+				android:layout_gravity="center|right"
+				android:layout_height="@dimen/edit_width"
+				android:textCursorDrawable="@null"
+				android:layout_weight="1"
+				android:gravity="left"
+				android:padding="3dip"
+				android:focusable="false"
+				android:text="100" >
+			</EditText>
+
+		</LinearLayout>
+
+<RelativeLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingRight="10dp"
+	android:paddingLeft="10dp"
+	android:layout_marginTop="15dp"
+	android:layout_marginLeft="10dp"
+	android:layout_marginRight="10dp"
+	android:background="@color/titlebg"
+	>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/dataname"
+		android:id="@+id/dataname"
+		android:visibility="gone"
+		android:textSize="20sp"
+		android:textColor="@color/black" />
+
+	<EditText
+		android:id="@+id/edt_acc_filename"
+		android:layout_below="@+id/dataname"
+		android:layout_width="match_parent"
+		android:textCursorDrawable="@null"
+		android:layout_height="@dimen/edit_width"
+		android:layout_weight="1"
+		android:gravity="left"
+		android:padding="3dip"
+		android:visibility="gone"
+		android:text="20150205150405_AccelerateData.txt" >
+	</EditText>
+</RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_acc_start"
+			android:background="@drawable/button_login_shape"
+			android:layout_marginTop="15dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_width"
+            android:gravity="center"
+            android:text="Start" />
+    </LinearLayout>
+
+</ScrollView>

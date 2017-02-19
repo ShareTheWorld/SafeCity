@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+           	android:padding="5px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/titlebg"
+                android:textSize="20sp"
+                android:text="X axis(m/s^2)"
+                android:paddingLeft = "8px"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:paddingTop = "3px"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:padding = "3px"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/titlebg"
+                        android:text=""
+                        android:id="@+id/xvalue"
+                        android:textSize="20sp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:padding = "3px"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/titlebg"
+                        android:text="Avg:"
+                        android:textSize="20sp"
+                        android:id="@+id/xavg"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/titlebg"
+                        android:text="Max:"
+                        android:textSize="20sp"
+                        android:id="@+id/xmax"
+                        android:paddingTop="5px"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/titlebg"
+                        android:text="Min:"
+                        android:textSize="20sp"
+                        android:id="@+id/xmin"
+                        android:paddingTop="5px"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+           	android:padding="5px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/titlebg"
+                android:textSize="20sp"
+                android:text="Y axis(m/s^2)"
+                android:paddingLeft = "8px"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:paddingTop = "3px"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:padding = "3px"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/titlebg"
+                        android:text=""
+                        android:id="@+id/yvalue"
+                        android:textSize="20sp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:padding = "3px"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/titlebg"
+                        android:text="Avg:"
+                        android:textSize="20sp"
+                        android:id="@+id/yavg"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/titlebg"
+                        android:text="Max:"
+                        android:textSize="20sp"
+                        android:id="@+id/ymax"
+                        android:paddingTop="5px"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/titlebg"
+                        android:text="Min:"
+                        android:textSize="20sp"
+                        android:id="@+id/ymin"
+                        android:paddingTop="5px"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+           	android:padding="5px"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/titlebg"
+                android:text="Z axis(m/s^2)"
+                android:textSize="20sp"
+                android:paddingLeft = "8px"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:paddingTop = "3px"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:padding = "3px"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/titlebg"
+                        android:text="aaaaaaa"
+                        android:textSize="20sp"
+                        android:id="@+id/zvalue"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:padding = "3px"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/titlebg"
+                        android:text="Avg:"
+                        android:textSize="20sp"
+                        android:id="@+id/zavg"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/titlebg"
+                        android:text="Max:"
+                        android:textSize="20sp"
+                        android:id="@+id/zmax"
+                        android:paddingTop="5px"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/titlebg"
+                        android:text="Min:"
+                        android:textSize="20sp"
+                        android:id="@+id/zmin"
+                        android:paddingTop="5px"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/register_cancle_shape"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/finish_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_agree_shape"
+                android:layout_marginTop="50dp"
+                android:text="@string/finish" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

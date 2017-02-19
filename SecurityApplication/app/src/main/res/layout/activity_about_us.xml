@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.city.safe.activity.AboutUsActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/aboutus_content"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/mrzhao"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/mrzhao"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mrzhao1"
+                    android:layout_toRightOf="@id/mrzhao"
+                    android:id="@+id/mrzhao1"
+                    android:layout_alignParentTop="true"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mrzhao2"
+                    android:layout_toRightOf="@id/mrzhao"
+                    android:id="@+id/mrzhao2"
+                    android:layout_below="@id/mrzhao1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mrzhao3"
+                    android:layout_toRightOf="@id/mrzhao"
+                    android:id="@+id/mrzhao3"
+                    android:layout_below="@id/mrzhao2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mrzhao4"
+                    android:layout_toRightOf="@id/mrzhao"
+                    android:id="@+id/mrzhao4"
+                    android:layout_below="@id/mrzhao3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email:zhaoxf@dlut.edu.cn"
+                    android:layout_toRightOf="@id/mrzhao"
+                    android:id="@+id/mrzhao5"
+                    android:layout_below="@id/mrzhao4" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/mryu"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/mryu"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mryu1"
+                    android:layout_toRightOf="@id/mryu"
+                    android:id="@+id/mryu1"
+                    android:layout_alignParentTop="true"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mryu2"
+                    android:layout_toRightOf="@id/mryu"
+                    android:id="@+id/mryu2"
+                    android:layout_below="@id/mryu1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mryu3"
+                    android:layout_toRightOf="@id/mryu"
+                    android:id="@+id/mryu3"
+                    android:layout_below="@id/mryu2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mryu4"
+                    android:layout_toRightOf="@id/mryu"
+                    android:id="@+id/mryu4"
+                    android:layout_below="@id/mryu3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email:yuyan@dlut.edu.cn"
+                    android:layout_toRightOf="@id/mryu"
+                    android:id="@+id/mryu5"
+                    android:layout_below="@id/mryu4" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/mrli"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/mrli"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/mrli1"
+                    android:layout_toRightOf="@id/mrli"
+                    android:id="@+id/mrli1"
+                    android:layout_alignParentTop="true"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mrli2"
+                    android:layout_toRightOf="@id/mrli"
+                    android:id="@+id/mrli2"
+                    android:layout_below="@id/mrli1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mrli3"
+                    android:layout_toRightOf="@id/mrli"
+                    android:id="@+id/mrli3"
+                    android:layout_below="@id/mrli2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mrli4"
+                    android:layout_toRightOf="@id/mrli"
+                    android:id="@+id/mrli4"
+                    android:layout_below="@id/mrli3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email:mingchul@dlut.edu.cn"
+                    android:layout_toRightOf="@id/mrli"
+                    android:id="@+id/mrli5"
+                    android:layout_below="@id/mrli4" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/misswang"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/misswang"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/misswang1"
+                    android:layout_toRightOf="@id/misswang"
+                    android:id="@+id/misswang1"
+                    android:layout_alignParentTop="true"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/misswang2"
+                    android:layout_toRightOf="@id/misswang"
+                    android:id="@+id/misswang2"
+                    android:layout_below="@id/misswang1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/misswang3"
+                    android:layout_toRightOf="@id/misswang"
+                    android:id="@+id/misswang3"
+                    android:layout_below="@id/misswang2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/misswang4"
+                    android:layout_toRightOf="@id/misswang"
+                    android:id="@+id/misswang4"
+                    android:layout_below="@id/misswang3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email:wnnian@mail.dlut.edu.cn"
+                    android:layout_toRightOf="@id/misswang"
+                    android:id="@+id/misswang5"
+                    android:layout_below="@id/misswang4" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

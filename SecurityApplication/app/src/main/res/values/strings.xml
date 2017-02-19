@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">SafeCity</string>
+    <string name="please_select">请选择:</string>
+    <string name="mysign">我的签到</string>
+    <string name="mlevel">等级排行</string>
+    <string name="mydata">我的资料</string>
+    <string name="mshare">推荐给好友</string>
+    <string name="mcommunication">疑问交流</string>
+    <string name="linearacc_data">加速度数据</string>
+    <string name="coner_data">角度数据</string>
+    <string name="linearace_and_coner_data">加速度和角度数据</string>
+    <string name="distance_data">位移数据</string>
+    <string name="crack_data">裂纹识别</string>
+    <string name="questionnaire_data">调查问卷</string>
+    <string name="image_data">图像采集</string>
+    <string name="finish">完成</string>
+    <string name="twice_exit">再按一次退出程序</string>
+    <string name="myproject">我的项目</string>
+    <string name="usermanagement">用户管理</string>
+    <string name="sos">应急通讯SOS</string>
+    <string name="aboutus">关于我们</string>
+    <string name="serviceword">"                    服务协议"</string>
+    <string name="ok_button">确定</string>
+    <string name="please_agree">请同意服务协议</string>
+    <string name="create_projectname">项目名称</string>
+    <string name="create_projectword">项目简介</string>
+    <string name="please_select_adddate">选择需要采集的数据类型</string>
+    <string name="createproject">新建项目</string>
+    <string name="login_email">邮箱</string>
+    <string name="login_password">密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="password2">确认密码</string>
+    <string name="username">用户名</string>
+    <string name="read_and_agree">我已阅读并同意</string>
+    <string name="serviceword2">服务协议</string>
+    <string name="cancel">取消</string>
+    <string name="choseemail">请选择邮件类应用</string>
+    <string name="registsuccessful">注册成功</string>
+
+    <string name="aboutus_content">
+        "        该软件是由大连理工大学结构健康云监测团队研发的，该软件主要实现结构健康监测数据的收集与共享。利用该软件，公众可以对城市公共基础设施的安全进行监测，并实行数据的上传与共享，从而实现城市结构公共安全云监测。\n我们的团队："
+    </string>
+    <string name="err_fileFailed">error:Save file failed</string>
+    <string name = "acc_data">Accelerometer Data</string>
+    <string name="acc_reg_err">The device does not support Linear acceleration!</string>
+    <string name = "acc_title">Accelerometer Setting</string>
+    <string name="structimgage">Structure image</string>
+    <string name="x_axis">X-axis threshold(m/s^2)</string>
+    <string name="y_axis">Y-axis threshold(m/s^2)</string>
+    <string name="z_axis">Z-axis threshold(m/s^2)</string>
+    <string name="duration">Duration(s)</string>
+    <string name="frequency">Frequency(Hz)</string>
+    <string name="dataname">Data filename</string>
+
+
+    <string name="diameter">Diameter:</string>
+    <string name="done">Done</string>
+    <string name="indentify_button">Ratio</string>
+    <string name="start">start</string>
+
+
+
+
+
+
+    <string name="serviceword_content">"                                      \n \n
+         欢迎您注册成为城市公共安全数据共享平台用户！注册前请先阅读以下协议并选择同意以继续！\n
+一、本平台条款的确认和接纳\n \n
+1.1 城市公共安全平台用户服务的所有权和运作权归城市公共安全平台拥有。城市公共安全平台所提供的服务将按照有关章程、服务条款和操作规则严格执行。用户通过注册程序点击'我同意' 按钮，即表示用户与城市公共安全平台达成协议并接受所有的服务条款。\n\n二、用户须知\n \n
+2.1 用户在注册时应当提供详尽的个人资料。\n
+2.2 用户应当通过真实身份信息认证注册账号，且用户提交的账号名称、头像和简介等注册信息中不得出现违法和不良信息，经城市公共安全平台审核，如存在上述情况，城市公共安全平台将不予注册；同时，在注册后，如发现用户以虚假信息骗取账号名称注册，或其账号头像、简介等注册信息存在违法和不良信息的，城市公共安全平台有权不经通知单方采取限期改正、暂停使用、注销登记、收回等措施。\n
+2.3 您一旦注册成功成为用户，您将得到一个密码和账号，您需要对自己在账户中的所有活动和事件负全责。如果由于您的过失导致您的账号和密码脱离您的控制，则由此导致的针对您、城市公共安全平台或任何第三方造成的损害，您将承担全部责任。\n
+2.4 用户同意遵守《中华人民共和国保守国家秘密法》、《中华人民共和国计算机信息系统安全保护条例》、《计算机软件保护条例》等有关计算机及互联网规定的法律和法规、实施办法。在任何情况下，城市公共安全平台合理地认为用户的行为可能违反上述法律、法规，城市公共安全平台可以在任何时候，不经事先通知终止向该用户提供服务。用户应了解国际互联网的无国界性，应特别注意遵守当地所有有关的法律和法规。\n\n
+三、服务内容\n\n
+3.1 城市公共安全平台服务的具体内容由城市公共安全平台根据实际情况提供。\n
+3.2 用户理解并接受，城市公共安全平台仅提供相关的网络服务，除此之外与相关网络服务有关的设备（如个人电脑、手机、及其他与接入互联网或移动互联网有关的装置）及所需的费用（如为接入互联网而支付的电话费及上网费、为使用移动网而支付的手机费）均应由用户自行负担。\n
+3.3 城市公共安全平台需要定期或不定期地对提供网络服务的平台或相关的设备进行检修或者维护，如因此类情况而造成网络服务（包括收费网络服务）在合理时间内的中断，城市公共安全平台无需为此承担任何责任。城市公共安全平台保留不经事先通知为维修保养、升级或其它目的暂停本服务任何部分的权利。\n
+3.4 用户明确同意其使用城市公共安全平台服务所存在的风险将完全由其自己承担。用户理解并接受下载或通过城市公共安全平台服务取得的任何信息资料取决于用户自己，并由其承担系统受损、资料丢失以及其它任何风险。城市公共安全平台对在共享平台上得到的任何商品购物服务、交易进程、招聘信息，都不作担保。\n\n
+四、使用说明\n\n
+【质量反馈】用户在数据使用过程中对发现的数据质量问题，有义务向“共享平台”数据服务组反馈有关信息，经过审核后，对数据进行修改。\n
+【使用限制】用户不得有偿或无偿转让从“共享平台”获得的具有密级约束的数据，包括用户对这些数据资源进行单位换算、介质转换或者度量变换后形成的新的数据。\n
+【发布限制】用户不得直接将其从“共享平台”获得的具有密级约束的数据资源向外发布，或者作为向外分发或供外部使用的数据库、产品和服务的一部分。\n
+【经营限制】用户从“共享平台”获得的公开数据资源，不得用于经营性活动，可以在内部分发和存放在仅供本单位使用的局域网上，但不得与广域网、互联网相连接。\n
+【尊重知识产权】凡使用“共享平台”数据的用户，在发表相关成果或论文报告时，有义务注明所利用数据生产单位（或研究者）并引用他们关于生产或使用本数据集的论文、提供单位以及获取渠道（城市公共安全平台），并向他们反馈信息资源利用的相关信息，赠送论文报告的原件或复印件。\n\n
+五、免责说明\n\n
+5.1 城市公共安全平台不担保网络服务一定能满足用户的要求，也不担保服务不会中断，对网络服务的及时性、安全性、准确性也都不作担保。\n
+5.2 城市公共安全平台不保证为向用户提供便利而设置的外部链接的准确性和完整性，同时，对于该等外部链接指向的不由城市公共安全平台实际控制的任何网页上的内容，城市公共安全平台不承担任何责任。\n
+5.3 对于因电信系统或互联网网络故障、计算机故障或病毒、信息损坏或丢失、计算机系统问题或其它任何不可抗力原因而产生损失，城市公共安全平台不承担任何责任，但将尽力减少因此而给用户造成的损失和影响。\n\n
+六、法律及争议解决\n\n
+网络服务条款要与中华人民共和国的法律解释相一致，用户和城市公共安全平台一致同意服从高等法院所有管辖。如发生城市公共安全平台服务条款与中华人民共和国法律相抵触时，则这些条款将完全按法律规定重新解释，而其它条款则依旧保持对用户产生约束效力和影响。\n\n
+七、解释权\n\n
+本注册协议的解释权归城市公共安全平台所有。\n"</string>
+    <string name="mrzhao1">赵雪峰(组长)</string>
+    <string name="mrzhao2">教授、博导、部长助理</string>
+    <string name="mrzhao3">智能结构系统研究所</string>
+    <string name="mrzhao4">大连理工大学建设工程学部土木工程学院</string>
+    <string name="mryu1">喻言(副组长)</string>
+    <string name="mryu2">教授、博导、所长</string>
+    <string name="mryu3">电路与系统研究所</string>
+    <string name="mryu4">大连理工大学电信学部电子科学与技术学院</string>
+    <string name="mrli1">李明楚(副组长)</string>
+    <string name="mrli2">教授、博导、副院长</string>
+    <string name="mrli3">软件技术研究所</string>
+    <string name="mrli4">大连理工大学软件学院</string>
+    <string name="misswang1">王念念</string>
+    <string name="misswang2">博士研究生</string>
+    <string name="misswang3">土木工程学院结构工程专业</string>
+    <string name="misswang4">大连理工大学建设工程学部</string>
+    <string name="oldpassword">旧密码</string>
+    <string name="newpassword">新密码</string>
+    <string name="passwordagain">重复密码</string>
+    <string name="changesuccessful">修改成功</string>
+    <string name="changemydata">修改个人信息:</string>
+    <string name="change">修改</string>
+    <string name="data">数据</string>
+    <string name="create_project">创建工程</string>
+
+    <string name="maintitle">城市安全全民参与</string>
+    <string name="createprojectname">项目名称</string>
+    <string name="createprojectdes">项目简介</string>
+    <string name="createposition">当前位置（经度，纬度）：</string>
+    <string name="submit">提交</string>
+    <string name="takephoto">拍照</string>
+    <string name="local">本地</string>
+    <string name="cancle">取消</string>
+
+    <string name="cablename">Cable name</string>
+    <string name="cablelen">Cable length l(m)</string>
+    <string name="lineardensity">Linear density m(kg/m)</string>
+    <string name="frequencydiff">Frequency difference f(Hz)</string>
+    <string name="samplingfreq">Sampling frequency (Hz)</string>
+    <string name="cableforce">Cable force T(N):</string>
+    <string name="calcforce">Cable force calculation</string>
+
+</resources>

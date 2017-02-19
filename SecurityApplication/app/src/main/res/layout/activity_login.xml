@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.city.safe.activity.LoginActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SafeCity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:textColor="#1f1f1f"
+        android:id="@+id/safecity"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/safecity"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/city"
+        android:layout_centerHorizontal="true"/>
+
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/login_panel"
+        android:orientation="vertical"
+        android:divider="#000000">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/login_emailText"
+            android:hint="@string/login_email"
+            android:paddingLeft="15dp"
+            android:text="123456789@qq.com"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/dittext_outline_shape"
+            android:textCursorDrawable="@null"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/login_passwordText"
+            android:layout_below="@id/login_emailText"
+            android:paddingLeft="15dp"
+            android:hint="@string/login_password"
+            android:text="123456789"
+            android:inputType="textPassword"
+            android:background="@drawable/dittext_outline_shape"
+            android:textCursorDrawable="@null"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/login_Button"
+            android:layout_below="@id/login_passwordText"
+            android:textSize="20sp"
+            android:background="@drawable/button_login_shape"
+            android:text="@string/login"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_Button"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:layout_below="@id/login_panel"
+        android:text="@string/register"
+        android:linksClickable="true"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         Powered by Cloud-SHM team\nDalian University of Technology, China"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:textSize="18dp"
+        android:textStyle="italic|bold"
+        android:typeface="serif"/>
+
+</RelativeLayout>

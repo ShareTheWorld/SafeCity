@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_1" >
+
+    <Button
+        android:id="@+id/btn_graphLeftTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_btn_back" />
+
+    <Button
+        android:id="@+id/btn_graphRightTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/bg_btn_camera"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/imgBtnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imgBtnLeft"
+        android:background="@null"
+        android:src="@drawable/time2" />
+
+    <ImageButton
+        android:id="@+id/imgBtnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false" 
+        android:layout_marginRight="58dp"
+        android:layout_toLeftOf="@+id/btn_graphRightTop"
+        android:background="@null"
+        android:src="@drawable/freq1" />
+
+    <ImageButton
+        android:id="@+id/imageRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_graphRightTop"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:src="@drawable/cableforce" />
+
+</RelativeLayout>

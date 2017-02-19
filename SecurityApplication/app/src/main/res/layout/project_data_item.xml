@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/project_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/file_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <!--<TextView-->
+    <!--android:id="@+id/state"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/time"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/upload"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@drawable/upload_ico"-->
+    <!--android:text="上传"/>-->
+    <!--<com.city.safe.view.NumberProgressBar-->
+    <!--android:id="@+id/progress"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:padding="20dp"-->
+    <!--custom:progress_current="0"-->
+    <!--style="@style/NumberProgressBar_Default"-->
+    <!--android:layout_height="wrap_content" />-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/project_data_layout"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/layout2">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/project" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/layout2"
+            android:layout_toLeftOf="@+id/layout6"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/layout3">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:ellipsize="middle"
+                android:lines="1"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout3"
+            android:layout_toRightOf="@id/layout2"
+            android:layout_toLeftOf="@+id/layout6"
+
+            android:paddingLeft="10dp"
+            android:id="@+id/layout4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文件大小："
+                android:maxLines="1"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/file_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3M"
+                android:maxLines="1"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout4"
+            android:layout_toRightOf="@id/layout2"
+            android:layout_toLeftOf="@+id/layout6"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/layout5">
+
+            <com.city.safe.view.NumberProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                custom:progress_current="0"
+                style="@style/NumberProgressBar_Default"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:gravity="right|center"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/layout6">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="time"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/upload"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/upload_ico"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

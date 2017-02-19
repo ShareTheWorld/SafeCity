@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/color_blob_detection_activity_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" 
+        />
+    <TextView 
+        android:id="@+id/position_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dip"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:text="Coordinates："/>
+    
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/start" />
+
+    <Button
+        android:id="@+id/switch_env"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/start"
+        android:layout_alignParentRight="true"
+        android:text="Switch" />
+
+    <Button
+        android:id="@+id/indentify_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/switch_env"
+        android:layout_alignParentRight="true"
+        android:text="@string/indentify_button" />
+
+  <RelativeLayout
+      android:id="@+id/thresh_detect"
+      android:layout_width="45dip"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true">
+       <ImageButton
+        android:id="@+id/d_plus"
+        android:layout_width="45dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/plus"
+         />
+      <TextView
+        android:id="@+id/d_threshvalue"
+        android:layout_width="45dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_below="@id/d_plus"
+        android:layout_marginRight="8dp"
+        android:textColor="#556B2F"
+        android:text="100"
+        android:ems="10"
+        android:inputType="number" />
+
+    <ImageButton
+        android:id="@+id/d_minus"
+        android:layout_width="45dip"
+        android:layout_height="40dip"
+        android:layout_below="@+id/d_threshvalue"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/minus" />
+        
+    
+  </RelativeLayout>
+  <RelativeLayout 
+      android:id="@+id/thresh_ratio"
+      android:layout_height="wrap_content"
+      android:layout_width="45dip"
+      android:layout_toLeftOf="@id/thresh_detect">
+       <ImageButton
+        android:id="@+id/plus"
+        android:layout_width="45dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/plus"
+         />
+      <TextView
+        android:id="@+id/threshvalue"
+        android:layout_width="45dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_below="@id/plus"
+        android:layout_marginRight="8dp"
+        android:textColor="#556B2F"
+        android:text="100"
+        android:ems="10"
+        android:inputType="number" />
+
+    <ImageButton
+        android:id="@+id/minus"
+        android:layout_width="45dip"
+        android:layout_height="40dip"
+        android:layout_below="@+id/threshvalue"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/minus" />
+
+  </RelativeLayout>
+
+  <TableLayout
+      android:id="@+id/controlpanel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_above="@id/position_show"
+      android:padding="10dip"
+      android:visibility="gone"
+      android:gravity="center_horizontal" >
+
+     <TableRow
+          android:id="@+id/tableRow1"
+          android:layout_width="wrap_content"
+          android:layout_margin="4dip"
+          android:layout_height="wrap_content" >
+          <ImageButton 
+              android:id="@+id/up"
+              android:src="@drawable/up"
+              android:background="#00000000"/>
+      </TableRow>
+
+      <TableRow
+          android:id="@+id/tableRow2"
+          android:gravity="center"
+          android:layout_margin="4dip"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" >
+          <ImageButton 
+              android:id="@+id/left"
+              android:src="@drawable/left"
+              android:background="#00000000"/>
+   
+          <ImageButton 
+              android:id="@+id/right"
+              android:src="@drawable/right"
+              android:layout_marginLeft="5dip"
+              android:background="#00000000">
+              
+          </ImageButton>
+      </TableRow>
+      <TableRow 
+          android:id="@+id/tableRow3"
+          android:layout_margin="4dip"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+          <ImageButton 
+              android:id="@+id/down"
+              android:src="@drawable/down"
+              android:background="#00000000"/>
+      </TableRow>
+     
+  </TableLayout>
+
+</RelativeLayout>

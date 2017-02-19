@@ -1,0 +1,1 @@
+include ':app',':photoSelector',':core',':opencv'

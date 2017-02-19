@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.city.safe.activity.CreatProjectActivity">
+
+    <RelativeLayout
+        android:id="@+id/create_project"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/project_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id_09328832" />
+
+        <TextView
+            android:id="@+id/project_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="2016.12.17 12:11" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/regisster_panel"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_project"
+        android:layout_centerHorizontal="true"
+        android:divider="#000000"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/project_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/dittext_outline_shape"
+        android:maxLength="10"
+        android:hint="@string/createprojectname"
+        android:paddingLeft="15dp"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/project_desc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="@string/createprojectdes"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dittext_outline_shape"
+        android:paddingLeft="15dp"
+        android:textCursorDrawable="@null" />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/project_create_position"
+        android:layout_below="@id/regisster_panel"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/project_create_position1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/createposition"
+            />
+
+        <TextView
+            android:id="@+id/project_create_position2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="(100,133)"
+            />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/project_create_position"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/project_create_position"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/register_cancle_shape"
+            android:onClick="cancelFinish"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/finish_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/register_agree_shape"
+            android:layout_below="@id/project_create_position"
+            android:layout_marginTop="50dp"
+            android:onClick="createFinish"
+            android:text="@string/finish" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

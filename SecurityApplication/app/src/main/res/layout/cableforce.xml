@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/head" />
+
+        <ImageView
+            android:id="@+id/struct_image1"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="2dp"
+            android:src="@drawable/structureimage2x" />
+
+        <ImageView
+            android:id="@+id/struct_image"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="1dp"
+            android:src="@drawable/formula" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/titlebg"
+            android:text="@string/cablename"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edt_cablename"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_width"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="" >
+        </EditText>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/titlebg"
+            android:text="@string/lineardensity"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edt_lineardensity"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_width"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="" >
+        </EditText>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/titlebg"
+            android:text="@string/cablelen"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edt_cablelen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_width"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="" >
+        </EditText>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/titlebg"
+            android:text="@string/frequencydiff"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edt_frequencydiff"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_width"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="" >
+        </EditText>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/titlebg"
+            android:text="@string/samplingfreq"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edt_samplingfreq"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_width"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:padding="3dip"
+            android:text="" >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="145dp"
+                android:layout_height="@dimen/edit_width"
+                android:background="@color/titlebg"
+                android:text="@string/cableforce"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/text_forcevalue"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edit_width"
+                android:background="@color/titlebg"
+                android:text=""
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_cable_calc"
+                android:layout_width="145dp"
+                android:layout_height="@dimen/edit_width"
+                android:gravity="center"
+                android:text="Calculate" />
+
+            <Button
+            android:id="@+id/btn_cable_save"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_width"
+            android:gravity="center"
+            android:text="Save" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

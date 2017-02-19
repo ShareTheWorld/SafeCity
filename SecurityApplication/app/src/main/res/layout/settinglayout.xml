@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/index_background"
+    android:padding="5dip"
+    android:gravity="right">
+   
+    <TextView
+        android:id="@+id/diameter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/input_diameter"
+        android:textColor="#000000"
+        android:text="@string/diameter"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/input_diameter"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="5dip" />
+
+    <Spinner
+        android:id="@+id/frontorback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/input_diameter"
+        />
+     <EditText
+        android:id="@+id/input_certain_height"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/frontorback"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="height(mm)"
+        android:padding="5dip" />
+    <EditText
+        android:id="@+id/input_certain_width"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/input_certain_height"
+        android:layout_alignTop="@id/input_certain_height"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="5dip"
+        android:hint="width(mm)"
+        />
+   
+
+    <Button
+        android:id="@+id/set_diameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/frontorback"
+        android:layout_below="@+id/input_certain_height"
+        android:layout_marginTop="10dp"
+        android:text="@string/done" />
+    
+    <EditText android:id="@+id/skippixels"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:hint="skip"
+        android:inputType="number"
+        android:layout_toLeftOf="@id/set_diameter"
+        android:layout_alignTop="@id/set_diameter"/>
+    <Spinner
+        android:id="@+id/spotcountmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_certain_width"
+        android:layout_alignTop="@id/skippixels"
+        android:layout_toLeftOf="@id/skippixels"
+        />
+</RelativeLayout>
+</ScrollView>
+</LinearLayout>
